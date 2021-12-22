@@ -10,7 +10,7 @@ class IntroScreen extends StatelessWidget {
     return const Scaffold(
       body: Center(
         child: TextNormal(
-          title: "Hello Cương hi",
+          title: "Hello Cương Hehe",
           colors: AppColors.primaryColor,
         ),
       ),
