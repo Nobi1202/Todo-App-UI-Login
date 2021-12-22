@@ -6,5 +6,5 @@ class AppImages {
 
   // Images
   static const String imgElement4 = 'assets/images/img_element4.svg';
-
+  static const String imgIntroImage = 'assets/images/img_intro_image.svg';
 }
