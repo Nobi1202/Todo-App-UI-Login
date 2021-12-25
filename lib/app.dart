@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:todo_app/configs/constants.dart';
-import 'package:todo_app/ui/intro_screen/intro_screen.dart';
+import 'package:todo_app/ui/ui.dart';
 
 class TodoApp extends StatelessWidget {
   const TodoApp({Key? key}) : super(key: key);
@@ -19,6 +19,8 @@ class TodoApp extends StatelessWidget {
         home: const IntroScreen(),
         routes: {
           Constants.introScreen: (context) => const IntroScreen(),
+          Constants.signInScreen: (context) => const SignInPage(),
+          Constants.registerScreen: (context) => const RegisterPage(),
         },
       ),
     );
