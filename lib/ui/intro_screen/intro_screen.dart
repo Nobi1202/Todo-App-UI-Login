@@ -8,7 +8,6 @@ import 'package:todo_app/ui/components/text/text_normal.dart';
 import '../components/app_theme/app_theme.dart';
 import '../components/button/button_custom.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-
 class IntroScreen extends StatelessWidget {
   const IntroScreen({Key? key}) : super(key: key);
 
