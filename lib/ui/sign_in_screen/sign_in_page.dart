@@ -22,7 +22,7 @@ class SignInPage extends StatelessWidget {
             ),
             const Center(
               child: Text(
-                'Welcome Back Back!',
+                'Welcome Back Back back!',
                 style: TextStyle(
                   fontFamily: 'Poppins',
                   fontWeight: FontWeight.w600,
