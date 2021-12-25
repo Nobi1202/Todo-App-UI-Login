@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:todo_app/configs/colors.dart';
 
 class TextNormal extends StatelessWidget {
   final String title;
@@ -25,7 +26,7 @@ class TextNormal extends StatelessWidget {
       title,
       textAlign: isCenter != null ? TextAlign.center : null,
       style: TextStyle(
-        color: colors ?? Colors.white,
+        color: colors ?? AppColors.primaryColor,
         fontWeight: fontWeight ?? FontWeight.w400,
         fontStyle: FontStyle.normal,
         fontFamily: 'Poppins',

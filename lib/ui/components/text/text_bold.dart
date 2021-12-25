@@ -23,7 +23,7 @@ class TextBold extends StatelessWidget {
       textAlign: isCenter != null ? TextAlign.center : null,
       style: TextStyle(
         color: colors,
-        fontWeight: FontWeight.w700,
+        fontWeight: FontWeight.w600,
         fontStyle: FontStyle.normal,
         fontFamily: 'Poppins',
         fontSize: size,

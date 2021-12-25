@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:todo_app/configs/colors.dart';
+import 'package:todo_app/configs/constants.dart';
 import 'package:todo_app/configs/images.dart';
+import 'package:todo_app/ui/components/text/text_bold.dart';
 import 'package:todo_app/ui/components/text/text_normal.dart';
-import 'dart:math';
-
-import '../app_theme.dart';
-import '../button_custome.dart';
-import '../register_page.dart';
+import '../components/app_theme/app_theme.dart';
+import '../components/button/button_custom.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class IntroScreen extends StatelessWidget {
   const IntroScreen({Key? key}) : super(key: key);
@@ -18,54 +18,48 @@ class IntroScreen extends StatelessWidget {
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          AppTheme(),
-          Interface(),
-        ],
-      ),
-    );
-  }
-}
-
-class Interface extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Center(
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
+          const AppTheme(),
           Container(
+            alignment: Alignment.center,
+            margin: EdgeInsets.only(bottom: 45.h),
             padding: EdgeInsets.only(
-              top: 59,
-              right: 100.44,
-              left: 102.0,
+              top: 59.h,
             ),
             child: SvgPicture.asset(
               AppImages.imgIntro,
             ),
           ),
-          SizedBox(height: 45),
-          Text(
-            'Get thing done with TODO',
-            style: TextStyle(
-              fontWeight: FontWeight.w600,
-              fontFamily: 'Poppins',
-              fontSize: 18,
+          Center(
+            child: TextBold(
+              title: 'Get thing done with TODO',
+              size: 18.sp,
+              colors: AppColors.primaryColor,
+              height: 1.3.h,
+              isCenter: true,
             ),
           ),
-          SizedBox(height: 36),
-          Text(
-            'Lorem ipsum dolor sit amet,\n consectetur adipiscing elit. Interdum\n dictum tempus, interdum at dignissim\n metus. Ultricies sed nunc',
-            style: TextStyle(
-              fontSize: 13.0,
-              fontWeight: FontWeight.w400,
+          SizedBox(height: 36.h),
+          Center(
+            child: TextNormal(
+              title:
+                  'Lorem ipsum dolor sit amet,\n consectetur adipiscing elit. Interdum\n dictum tempus, interdum at dignissim\n metus. Ultricies sed nunc',
+              size: 13.sp,
+              colors: AppColors.primaryColor,
+              isCenter: true,
             ),
-            textAlign: TextAlign.center,
           ),
-          SizedBox(height: 36),
-          ButtonCustome(RegisterPage(),'GET STARTED'),
+          const Spacer(),
+          Padding(
+            padding: EdgeInsets.only(bottom: 94.h, left: 26.w, right: 24.w),
+            child: ButtonCustom(
+              onTap: () {
+                Navigator.pushNamed(context, Constants.registerScreen);
+              },
+              insideText: "GET STARTED",
+            ),
+          ),
         ],
       ),
     );
   }
 }
-
