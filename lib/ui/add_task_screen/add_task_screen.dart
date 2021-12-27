@@ -26,7 +26,9 @@ class AddTaskScreen extends StatelessWidget {
               autofocus: true,
             ),
             SizedBox(height: 30.h,),
-            ButtonCustom(insideText: 'ADD', onTap: () {  },),
+            ButtonCustom(insideText: 'ADD', onTap: () {
+
+            },),
           ],
         ),
       ),
