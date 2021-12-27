@@ -30,7 +30,7 @@ class SignInPage extends StatelessWidget {
               child: TextBold(
                 title: 'Welcome Back!',
                 colors: AppColors.bPrimaryColor,
-                size: 18,
+                size: 18.sp,
                 height: 1.16.h,
               ),
             ),
@@ -50,11 +50,11 @@ class SignInPage extends StatelessWidget {
               ),
               child: const TextInput(hintText: 'Enter your email'),
             ),
-            const Padding(
+             Padding(
               padding: EdgeInsets.only(
-                bottom: 25.0,
-                right: 25.0,
-                left: 25.0,
+                bottom: 25.0.h,
+                right: 25.0.w,
+                left: 25.0.w,
               ),
               child: TextInput(hintText: 'Enter password'),
             ),

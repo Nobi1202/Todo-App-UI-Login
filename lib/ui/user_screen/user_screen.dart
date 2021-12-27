@@ -38,7 +38,7 @@ class _UserScreenState extends State<UserScreen> {
                         left: 141.h,
                         right: 134.h,
                       ),
-                      child: const CircleAvatar(),
+                      child: Image.asset(AppImages.imgAvatar),
                     ),
                     const SizedBox(height: 18),
                     Padding(
@@ -47,7 +47,7 @@ class _UserScreenState extends State<UserScreen> {
                         title: 'Hello Doan Duc Cuong',
                         colors: AppColors.wPrimaryColor,
                         size: 18.sp,
-                        height: 1.16,
+                        height: 1.16.h,
                       ),
                     ),
                   ],
@@ -118,9 +118,11 @@ class _UserScreenState extends State<UserScreen> {
                               var a = await DialogHelper.showTaskListDialog(
                                   context: context);
                               if (a != null) {
-                                setState(() {
-                                  Constants.contentTaskList.add(a);
-                                });
+                                setState(
+                                  () {
+                                    Constants.contentTaskList.add(a);
+                                  },
+                                );
                               }
                             },
                             child: SvgPicture.asset(
@@ -144,11 +146,14 @@ class _UserScreenState extends State<UserScreen> {
                                 children: [
                                   GestureDetector(
                                     onTap: () {
-                                      setState(() {
-                                        Constants.contentTaskList[index].check =
-                                            !Constants
-                                                .contentTaskList[index].check;
-                                      });
+                                      setState(
+                                        () {
+                                          Constants.contentTaskList[index]
+                                                  .check =
+                                              !Constants
+                                                  .contentTaskList[index].check;
+                                        },
+                                      );
                                     },
                                     child: Container(
                                       decoration: BoxDecoration(
@@ -181,7 +186,7 @@ class _UserScreenState extends State<UserScreen> {
                     ],
                   ),
                 ),
-              )
+              ),
             ],
           ),
         ],

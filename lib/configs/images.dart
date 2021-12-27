@@ -13,4 +13,5 @@ class AppImages {
   static const String imgEllipse12='assets/images/img_ellipse12.svg';
   static const String imgClock='assets/images/img_clock.png';
   static const String imgPluscircle='assets/images/img_pluscircle.svg';
+  static const String imgAvatar='assets/images/img_avatar.png';
 }

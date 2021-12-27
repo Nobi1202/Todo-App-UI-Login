@@ -6,7 +6,6 @@ import 'package:todo_app/ui/components/text/text_normal.dart';
 import 'package:todo_app/ui/components/text_input/text_input.dart';
 import '../components/app_theme/app_theme.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-
 import '../components/button/button_custom.dart';
 
 class RegisterPage extends StatelessWidget {
