@@ -7,11 +7,9 @@ class AppTheme extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Stack(
-      children: [
-        SvgPicture.asset(AppImages.imgEllipse1),
-        SvgPicture.asset(AppImages.imgEllipse2),
-      ],
-    );
+    return Stack(children: [
+      SvgPicture.asset(AppImages.imgEllipse1),
+      SvgPicture.asset(AppImages.imgEllipse2),
+    ]);
   }
 }
