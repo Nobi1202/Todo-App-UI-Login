@@ -49,7 +49,7 @@ class _AddTaskScreenState extends State<AddTaskScreen> {
             insideText: 'ADD',
             onTap: () {
               TaskList taskList = TaskList(check: false, text: controller.text);
-              return Navigator.pop(context, taskList);
+              if(controller.text!='') {return Navigator.pop(context,taskList);}
             },
           ),
         ],

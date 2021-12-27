@@ -117,7 +117,6 @@ class _UserScreenState extends State<UserScreen> {
                             onTap: () async {
                               var a = await DialogHelper.showTaskListDialog(
                                   context: context);
-
                               if (a != null) {
                                 setState(() {
                                   Constants.contentTaskList.add(a);
