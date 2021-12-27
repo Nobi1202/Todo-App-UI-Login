@@ -48,8 +48,12 @@ class _AddTaskScreenState extends State<AddTaskScreen> {
           ButtonCustom(
             insideText: 'ADD',
             onTap: () {
-              TaskList taskList = TaskList(check: false, text: controller.text);
-              if(controller.text!='') {return Navigator.pop(context,taskList);}
+              TaskList taskList =
+                  TaskList(check: false, text: controller.text.trimLeft());
+
+              if (controller.text.trimLeft().isNotEmpty) {
+                return Navigator.pop(context, taskList);
+              }
             },
           ),
         ],

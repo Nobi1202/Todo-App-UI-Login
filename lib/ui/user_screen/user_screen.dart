@@ -40,7 +40,7 @@ class _UserScreenState extends State<UserScreen> {
                       ),
                       child: Image.asset(AppImages.imgAvatar),
                     ),
-                    const SizedBox(height: 18),
+                    SizedBox(height: 18.h),
                     Padding(
                       padding: EdgeInsets.only(left: 79.w, right: 73.w),
                       child: TextBold(

@@ -56,7 +56,7 @@ class SignInPage extends StatelessWidget {
                 right: 25.0.w,
                 left: 25.0.w,
               ),
-              child: TextInput(hintText: 'Enter password'),
+              child: const TextInput(hintText: 'Enter password'),
             ),
             TextBold(
               title: 'Forgot Password',
