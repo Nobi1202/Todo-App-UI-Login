@@ -21,6 +21,7 @@ class TodoApp extends StatelessWidget {
           Constants.introScreen: (context) => const IntroScreen(),
           Constants.signInScreen: (context) => const SignInPage(),
           Constants.registerScreen: (context) => const RegisterPage(),
+          Constants.userScreen: (context) => const UserScreen(),
         },
       ),
     );
